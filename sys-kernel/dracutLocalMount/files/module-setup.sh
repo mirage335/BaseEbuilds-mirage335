@@ -10,5 +10,5 @@ return 0
 }
 
 install() {
-inst_hook pre-trigger 91 "$moddir/mount-local.sh"
+inst_hook pre-mount 91 "$moddir/mount-local.sh"
 }
