@@ -23,6 +23,6 @@ src_install() {
 	cd "${D}"usr/lib/dracut/modules.d/91local/
 	
 	cp $FILESDIR/* ./
-	chmod 744 ./*
+	chmod 755 ./*
 	chown root:root ./*
 }
