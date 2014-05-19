@@ -18,7 +18,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE=""
 
-DEPEND="app-cdr/cdrtools app-emulation/virtualbox app-shells/ubiquitious_bash"
+DEPEND="app-cdr/cdrtools app-emulation/virtualbox app-emulation/virtualbox-extpack-oracle app-shells/ubiquitious_bash"
 
 src_install() {
 	mkdir -p "${D}"opt/templates/IQEmu/
