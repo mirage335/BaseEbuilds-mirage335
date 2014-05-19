@@ -16,6 +16,6 @@ IUSE=""
 
 pkg_postinst() {
 	einfo "Disabling pam_lastlog ."
-	grep -v "pam_lastlog.so" "${ROOT}"/etc/pam.d/system-login > "${ROOT}"/etc/pam.d/system-login.temp
-	mv "${ROOT}"/etc/pam.d/system-login.temp "${ROOT}"/etc/pam.d/system-login
+	grep -v "pam_lastlog.so" "${ROOT}"etc/pam.d/system-login > "${ROOT}"etc/pam.d/system-login.temp
+	mv "${ROOT}"etc/pam.d/system-login.temp "${ROOT}"etc/pam.d/system-login
 }

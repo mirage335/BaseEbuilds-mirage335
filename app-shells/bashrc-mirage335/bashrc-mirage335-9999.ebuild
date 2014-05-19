@@ -23,7 +23,7 @@ pkg_postinst() {
 	if [[ $(grep bashrc-mirage335 "${ROOT}"/etc/bash/bashrc) == "" ]]
 	then
 		einfo "Global bashrc inclusion not found, updating."
-		echo ". /usr/bin/bashrc-mirage335.sh" >> "${ROOT}"/etc/bash/bashrc
+		echo ". /usr/bin/bashrc-mirage335.sh" >> "${ROOT}"etc/bash/bashrc
 	fi
 }
 
@@ -32,7 +32,7 @@ pkg_prerm() {
 	if [[ $(grep bashrc-mirage335 "${ROOT}"/etc/bash/bashrc) != "" ]]
 	then
 		einfo "Global bashrc inclusion found, uninstalling."
-		grep -v ". /usr/bin/bashrc-mirage335.sh" "${ROOT}"/etc/bash/bashrc > "${ROOT}"/etc/bash/bashrc.temp
-		mv "${ROOT}"/etc/bash/bashrc.temp "${ROOT}"/etc/bash/bashrc
+		grep -v ". /usr/bin/bashrc-mirage335.sh" "${ROOT}"etc/bash/bashrc > "${ROOT}"etc/bash/bashrc.temp
+		mv "${ROOT}"etc/bash/bashrc.temp "${ROOT}"etc/bash/bashrc
 	fi
 }
