@@ -5,21 +5,17 @@
 
 EAPI=5
 
-EGIT_REPO_URI="https://github.com/mirage335/bashrc-mirage335.git"
-
-inherit git-2 eutils
-
 DESCRIPTION="Removes previous login configuration."
 HOMEPAGE="https://forums.gentoo.org/viewtopic-t-944276-start-0.html"
 SRC_URI=""
 KEYWORDS="*"
 
-LICENSE="MIT"
+LICENSE="*"
 SLOT="0"
 IUSE=""
 
 pkg_postinst() {
-	einfo "Global bashrc inclusion found, uninstalling."
+	einfo "Disabling pam_lastlog ."
 	grep -v "pam_lastlog.so" "${ROOT}"/etc/pam.d/system-login > "${ROOT}"/etc/pam.d/system-login.temp
 	mv "${ROOT}"/etc/pam.d/system-login.temp "${ROOT}"/etc/pam.d/system-login
 }
