@@ -14,6 +14,8 @@ LICENSE="*"
 SLOT="0"
 IUSE=""
 
+DEPEND="app-emulation/win-nix_param_converter kde-base/kfmclient media-gfx/qrencode x11-apps/xmessage x11-misc/xsel"
+
 src_unpack() {
 	mkdir -p ${S}
 }
