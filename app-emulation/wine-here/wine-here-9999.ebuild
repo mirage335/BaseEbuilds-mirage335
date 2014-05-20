@@ -18,6 +18,8 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
 
+DEPEND="wine"
+
 src_install() {
 	mkdir -p "${D}"usr/bin/
 	cp "${S}"/wine-here "${S}"/winecfg-here "${D}"usr/bin/
