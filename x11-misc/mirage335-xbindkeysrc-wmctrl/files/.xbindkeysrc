@@ -1,0 +1,60 @@
+"wmctrl -s 0"
+    m:0x8 + c:10
+
+"wmctrl -s 1"
+    m:0x8 + c:11
+
+"wmctrl -s 2"
+    m:0x8 + c:12
+    
+"wmctrl -s 3"
+    m:0x8 + c:13
+
+"wmctrl -s 4"
+    m:0x8 + c:14
+
+"wmctrl -s 5"
+    m:0x8 + c:15
+    
+"wmctrl -s 6"
+    m:0x8 + c:16
+
+"wmctrl -s 7"
+    m:0x8 + c:17
+
+"wmctrl -s 8"
+    m:0x8 + c:18
+
+"wmctrl -s 9"
+    m:0x8 + c:19
+
+"wmctrl -r :ACTIVE: -t 0"
+    m:0x40 + c:10
+
+"wmctrl -r :ACTIVE: -t 1"
+    m:0x40 + c:11
+
+"wmctrl -r :ACTIVE: -t 2"
+    m:0x40 + c:12
+
+"wmctrl -r :ACTIVE: -t 3"
+    m:0x40 + c:13
+
+"wmctrl -r :ACTIVE: -t 4"
+    m:0x40 + c:14
+
+"wmctrl -r :ACTIVE: -t 5"
+    m:0x40 + c:15
+
+"wmctrl -r :ACTIVE: -t 6"
+    m:0x40 + c:16
+
+"wmctrl -r :ACTIVE: -t 7"
+    m:0x40 + c:17
+
+"wmctrl -r :ACTIVE: -t 8"
+    m:0x40 + c:18
+
+"wmctrl -r :ACTIVE: -t 9"
+    m:0x40 + c:19
+
