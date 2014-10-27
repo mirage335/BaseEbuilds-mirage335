@@ -12,7 +12,8 @@ HOMEPAGE="http://www.gpleda.org/"
 
 EGIT_REPO_URI="https://github.com/bert/pcb.git"
 EGIT_BRANCH="LP699471rev1"
-EGIT_COMMIT="85ff3733e702ddc38cd4fcb4fe8186e42be0cda1"
+#EGIT_COMMIT="85ff3733e702ddc38cd4fcb4fe8186e42be0cda1"
+
 
 inherit git-2
 
